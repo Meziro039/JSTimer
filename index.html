@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSTimer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1><a href="index.html">Timer</a></h1>
+    </div>
+
+    <!-- Reset button -->
+    <div class="reset">
+        <input id="reset" type="button" value="Reset" onclick="time_reset()">
+    </div>
+
+    <!-- Timer -->
+    <div class="timer">
+        <div class="count">
+            <input id="min_up" type="button" value="UP" onclick="min_up()">
+            <input id="sec_up" type="button" value="UP" onclick="sec_up()">
+        </div>
+        <div class="clock">
+            <span id="min">00</span><span>:</span><span id="sec">00</span>
+        </div>
+        <div class="count">
+            <input id="min_down" type="button" value="DOWN" onclick="min_down()">
+            <input id="sec_down" type="button" value="DOWN" onclick="sec_down()">
+        </div>
+        <div class="start">
+            <input id="start" type="button" value="START" onclick="time_start()">
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- C/https://github.com/Meziro039 -->

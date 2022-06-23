@@ -1,0 +1,127 @@
+.body{
+    background-color: #FFFFFF;
+}
+
+/* tag */
+h1{
+    color: #000000;
+    font-size: 35px;
+}
+
+/* class */
+
+/* Header */
+.header{
+    color: #000000;
+    margin: auto;
+    margin-top: -15px;
+    width: 80%;
+    position: relative;
+    min-width: 250px;
+}
+
+.header::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-color: #000000;
+}
+
+.header a{
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Resrt */
+.reset{
+    color: #000000;
+    margin: auto;
+    width: 80%;
+    text-align: right;
+    min-width: 250px;
+}
+
+.reset input{
+    background-color: #E14237; /* 255,65,55 */
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.reset input:hover{
+    background-color: #7e0000;
+    color: #FFFFFF;
+}
+
+/* Timer */
+.timer{
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    height: auto;
+    min-width: 250px;
+}
+
+.timer .count input{
+    background-color: #32a0be; /* 50,160,190 */
+    color: #FFFFFF;
+    font-size: 15px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 100px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.timer .count input:hover{
+    background-color: #266677;
+}
+
+.timer .clock{
+    font-size: 70px;
+}
+
+.start input{
+    background-color: #1ebe1e; /* 30,190,30 */
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 205px;
+}
+
+/* C/https://github.com/Meziro039 */
