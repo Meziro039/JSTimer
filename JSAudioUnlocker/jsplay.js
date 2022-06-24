@@ -1,7 +1,7 @@
 var mute // 無音音声
 var jsplay_sw // 切り替え値
 
-mute = new Audio("mute.mp3")
+mute = new Audio("JSAudioUnlocker/mute.mp3")
 jsplay_sw = 0 // 0=Stop 1=Play
 
 // 疑似Sleep
