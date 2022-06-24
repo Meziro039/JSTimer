@@ -102,13 +102,12 @@ function sec_down(){
 // カウント実行
 async function time_start(){
 
-    console.log("start")
-
     // 判定(START/STOP) - 0=開始前 1=開始
     if (sw == 0){
         sw = 1
         document.getElementById("start").setAttribute("value", "STOP")
         document.getElementById("start").style.backgroundColor = "#E14237";
+        play()
     }
     else{
         sw = 0
@@ -118,12 +117,14 @@ async function time_start(){
         document.getElementById("start").setAttribute("disabled", true)
         await sleep(1)
         document.getElementById("start").removeAttribute("disabled")
+        stop()
     }
 
     while (true){
 
         // スイッチ判定
         if (sw == 0){
+            stop()
             break
         }
         else{
@@ -146,6 +147,7 @@ async function time_start(){
 
         // break処理
         if (sec <= 0){
+            stop()
             new Audio("alarm.wav").play();
             sw = 0
             document.getElementById("start").setAttribute("value", "START")
@@ -163,8 +165,6 @@ async function time_start(){
             update()
         }
     }
-
-    console.log("ok")
     
 }
 
